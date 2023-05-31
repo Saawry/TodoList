@@ -1,9 +1,11 @@
-package com.mostafiz.android.todolist
+package com.mostafiz.android.todolist.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.mostafiz.android.todolist.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
 

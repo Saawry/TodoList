@@ -4,29 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:theme="@style/Theme.HishabeeTask.AppBarOverlay">
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/white"
-            app:popupTheme="@style/Theme.HishabeeTask.PopupOverlay" />
-
-    </com.google.android.material.appbar.AppBarLayout>
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/task_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/app_bar"
+        android:layout_below="@+id/toolbar"
         android:layout_marginTop="10dp"
         tools:listitem="@layout/card_task_item" />
 
