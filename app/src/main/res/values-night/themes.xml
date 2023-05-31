@@ -21,7 +21,7 @@
     <style name="Theme.TodoList.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.TodoList.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="CustomCheckboxStyle" parent="@style/Widget.Material3.CompoundButton.CheckBox">
+    <style name="CustomCheckboxStyle" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
         <item name="android:button">@drawable/checkbox_selector</item>
         <item name="android:background">@android:color/transparent</item>
     </style>

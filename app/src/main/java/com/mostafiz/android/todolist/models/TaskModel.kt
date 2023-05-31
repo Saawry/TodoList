@@ -9,25 +9,31 @@ import androidx.room.PrimaryKey
 @Entity
 class TaskModel {
     @PrimaryKey(autoGenerate = true)
-    var id: Long = 0
+    var id: Int = 0
     @ColumnInfo(name = "description")
     var description: String? = null
     @ColumnInfo(name = "date")
-    var createdAt: String? = null
+    var date: String? = null
     @ColumnInfo(name = "status")
     var status: Boolean
 
-    constructor(description: String?, createdAt: String?, status: Boolean) {
+    constructor(description: String?, date: String?, status: Boolean) {
         this.description = description
-        this.createdAt = createdAt
+        this.date = date
         this.status = status
     }
 
     @Ignore
-    constructor(id: Long, description: String?, createdAt: String?, status: Boolean) {
+    constructor(id: Int, description: String?, date: String?, status: Boolean) {
         this.id = id
         this.description = description
-        this.createdAt = createdAt
+        this.date = date
         this.status = status
     }
+
+    override fun toString(): String {
+        return "TaskModel(id=$id, description=$description, date=$date, status=$status)"
+    }
+
+
 }

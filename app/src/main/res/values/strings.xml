@@ -2,4 +2,6 @@
     <string name="app_name">TodoList</string>
     <string name="task_name">Task Name</string>
     <string name="all_tasks">All Tasks</string>
+    <string name="insert">Insert</string>
+    <string name="add_new_task">Add New Task</string>
 </resources>
