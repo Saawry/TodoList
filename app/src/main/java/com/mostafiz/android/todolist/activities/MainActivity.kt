@@ -58,13 +58,6 @@ class MainActivity : AppCompatActivity() {
             @SuppressLint("NotifyDataSetChanged", "ResourceAsColor")
             override fun onChecked(id: Int, status: Boolean,tv: MaterialTextView) {
                 updateStatus(id,status)
-//                if (status){
-//                    tv.setTextColor(R.color.grey)
-//                    tv.paintFlags = tv.paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
-//                }else{
-//                    tv.setTextColor(R.color.black)
-//                    tv.paintFlags = tv.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
-//                }
             }
         })
 

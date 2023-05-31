@@ -33,7 +33,7 @@ class TaskViewModel @Inject constructor(private val dao: TaskDao): ViewModel() {
     }
 
     fun getTaskList():LiveData<List<TaskModel>> {
-        return  dao.getAllModel()
+        return  dao.getAllModelLive()
     }
 
 
